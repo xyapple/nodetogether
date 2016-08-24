@@ -1,10 +1,11 @@
 const express = require('express');
 const app = express();
+var motivations = require('motivations');
 
 
 app.get("/", function(request, response) {
 
-  response.send ("hello world!");
+  response.send (motivations);
 
 });
 
