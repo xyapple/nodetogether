@@ -19,6 +19,8 @@
   "homepage": "https://github.com/xyapple/nodetogether#readme",
   "dependencies": {
     "express": "^4.14.0",
-    "motivations": "^1.0.10"
+    "express-handlebars": "^3.0.0",
+    "motivations": "^1.0.10",
+    "pick-one": "^1.0.1"
   }
 }
