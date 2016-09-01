@@ -2,7 +2,7 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const app = express();
 
-app.use(express.static('./app/pubilc'));
+app.use(express.static('./app/public'));
 
 app.engine('handlebars', exphbs({
   defaultLayout: 'main',
@@ -20,7 +20,7 @@ app.get('/', function(request, response) {
   var motivation = pickOne(motivations);
   var image = pickOne(natImages);
 
-  response.render('motivation', { motivation: image });
+  response.render('motivation', { motivation: motivation, image: image });
 });
 
 module.exports = app;
